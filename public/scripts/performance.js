@@ -97,7 +97,7 @@ function initPerformanceTab(mainViewer) {
             },
             options: {
                 scales: {
-                    xAxes: [{ type: 'realtime', realtime: { delay: 2000 } }],
+                    xAxes: [{ type: 'realtime', realtime: { delay: 5000 } }],
                     yAxes: [{ ticks: { beginAtZero: true } }]
                 }
             }
@@ -110,7 +110,7 @@ function initPerformanceTab(mainViewer) {
         const chart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+                labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
                 datasets: [{
                     label: 'Avg. Temp.',
                     data: [12, 19, 3, 5, 2, 3].map(i => Math.floor(Math.random() * 100)),
